@@ -1,3 +1,6 @@
 [submodule "escape_vc"]
 	path = escape_vc
 	url = https://github.com/noc-deadlock/escape_vc.git
+[submodule "seec"]
+	path = seec
+	url = https://github.com/noc-deadlock/seec.git
