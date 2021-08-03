@@ -1,0 +1,3 @@
+[submodule "escape_vc"]
+	path = escape_vc
+	url = https://github.com/noc-deadlock/escape_vc.git
