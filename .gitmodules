@@ -10,3 +10,6 @@
 [submodule "swap"]
 	path = swap
 	url = https://github.com/noc-deadlock/swap.git
+[submodule "spin"]
+	path = spin
+	url = https://github.com/noc-deadlock/spin.git
