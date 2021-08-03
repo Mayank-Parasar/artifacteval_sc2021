@@ -4,3 +4,6 @@
 [submodule "seec"]
 	path = seec
 	url = https://github.com/noc-deadlock/seec.git
+[submodule "drain"]
+	path = drain
+	url = https://github.com/noc-deadlock/drain.git
