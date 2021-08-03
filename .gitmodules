@@ -7,3 +7,6 @@
 [submodule "drain"]
 	path = drain
 	url = https://github.com/noc-deadlock/drain.git
+[submodule "swap"]
+	path = swap
+	url = https://github.com/noc-deadlock/swap.git
