@@ -1,4 +1,4 @@
-## README ##
+# README #
 Artifacteval eval repo for sc2021
 
 Each github repo, associated to the Zenodo DOIs, for EscapeVC, SPIN, SWAP, DRAIN, and SEEC/mSEEC contains a script by name: ae_sc2021.py at top level of the repo
@@ -8,7 +8,51 @@ Evaluators need to run it using python ae_sc2021.py
 
 After running the script Evaluators will observe “average_packet_latency” data which is used to create the graph for both 8x8 Mesh and 16x16 Mesh for Bit Rotation, Shuffle and Transpose traffic patterns.
 
-More information is presen in the respective repository's README
+More information is present in the respective repository's README
+
+### DOI information ###
+Artifact 1:
+Persistent ID (DOI, GitHub URL, etc.)
+DOI: 10.5281/zenodo.5156162 <br>
+Artifact name:
+artifacteval_sc2021
+
+
+Artifact 2:
+Persistent ID (DOI, GitHub URL, etc.)
+https://github.com/noc-deadlock/seec <br>
+Artifact name:
+seec
+
+Artifact 3:
+Persistent ID (DOI, GitHub URL, etc.)
+https://github.com/noc-deadlock/drain <br>
+Artifact name:
+drain
+
+Artifact 4:
+Persistent ID (DOI, GitHub URL, etc.)
+https://github.com/noc-deadlock/swap <br>
+Artifact name:
+swap
+
+Artifact 5:
+Persistent ID (DOI, GitHub URL, etc.)
+https://github.com/noc-deadlock/spin <br>
+Artifact name:
+spin
+
+Artifact 6:
+Persistent ID (DOI, GitHub URL, etc.)
+https://github.com/noc-deadlock/escape_vc <br>
+Artifact name:
+escape_vc
+
+Artifact 7:
+Persistent ID (DOI, GitHub URL, etc.)
+https://www.dropbox.com/sh/uyjuy9mybq8wagu/AAD9YRKEw-nC3XtP73xglTlNa?dl=0 <br>
+Artifact name:
+dropbox-backup link
 
 --------
 
@@ -92,7 +136,7 @@ ${gem5_drain}/build/Garnet_standalone/gem5.opt configs/example/garnet_synth_traf
 #### SPIN: #### 
 ${gem5_spin}/build/Garnet_standalone/gem5.opt configs/example/garnet_synth_traffic.py --topology=Mesh_XY --num-cpus=64 --num-dirs=64 --mesh-rows=8 --network=garnet2.0  --sim-cycles=$cycles --vcs-per-vnet=${vc_} --inj-vnet=0 --injectionrate=${k} --synthetic=${bench[$b]} --enable-spin-scheme=1 --dd-thresh=1024 --routing-algorithm=table --max-turn-capacity=40 --enable-variable-dd=0 --enable-rotating-priority=1
 
-#### EscapeVC ####  
+#### EscapeVC: ####  
 (uses WestFirst Routing Algorithm in Escape VC, Normal VC use Adaptive Random Routing):
 
 ${gem5_esc}/build/Garnet_standalone/gem5.opt configs/example/garnet_synth_traffic.py --topology=Mesh_XY --num-cpus=64 --num-dirs=64 --mesh-rows=8 --network=garnet2.0 --router-latency=1  --sim-cycles=$cycles  --inj-vnet=${vnet} --vcs-per-vnet=${vc_} --injectionrate=${k} --synthetic=${bench[$b]} --routing-algorithm=WEST_FIRST_
