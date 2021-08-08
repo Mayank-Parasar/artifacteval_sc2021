@@ -13,7 +13,7 @@ More information is present in the respective repository's README
 ### DOI information ###
 Artifact 1:
 Persistent ID (DOI, GitHub URL, etc.)
-DOI: 10.5281/zenodo.5156162 <br>
+DOI: 10.5281/zenodo.5171429 <br>
 Artifact name:
 artifacteval_sc2021
 
